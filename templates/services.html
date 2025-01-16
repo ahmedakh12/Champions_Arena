@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion's Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Champion's Arena Logo">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('registration') }}">Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <div class="hero">
+            <br><br>
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="logo" width="150px" height="150px">
+        </div>
+        <section class="services">
+            <h1>Our Services</h1>
+            <p>At Champion's Arena, we offer a range of world-class facilities and services to help you reach your fitness and sports goals. Whether you're looking to train, compete, or relax, we have something for everyone.</p>
+    
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="{{ url_for('static', filename='images/fitness centre icon.png') }}" alt="Fitness Centre Icon" class="icon-image">
+                    <div class="service-content">
+                        <h2>Fitness Centre</h2>
+                        <p>Our state-of-the-art Fitness Centre is equipped with the latest fitness equipment, offering a variety of training programs for all fitness levels.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/fitness centreservice.jpg') }}" alt="Fitness Centre Image" class="service-image">
+                </div>
+    
+                <div class="service-item">
+                    <img src="{{ url_for('static', filename='images/badminton icon.png') }}" alt="Badminton Court Icon" class="icon-image">
+                    <div class="service-content">
+                        <h2>Badminton</h2>
+                        <p>Our badminton courts are designed to provide the perfect playing environment, whether you're a beginner or a competitive player.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/badminton service.png') }}" alt="Badminton Court Image" class="service-image">
+                </div>
+    
+                <div class="service-item">
+                    <img src="{{ url_for('static', filename='images/basket ball icon.png') }}" alt="Basketball Court Icon" class="icon-image">
+                    <div class="service-content">
+                        <h2>Basketball</h2>
+                        <p>Play a game of basketball in our well-maintained courts, perfect for friendly matches or serious training.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/basket ball service.jpg') }}" alt="Basketball Court Image" class="service-image">
+                </div>
+    
+                <div class="service-item">
+                    <img src="{{ url_for('static', filename='images/swimming pool icon.png') }}" alt="Swimming Pool Icon" class="icon-image">
+                    <div class="service-content">
+                        <h2>Swimming Pool</h2>
+                        <p>Our large swimming pool is perfect for swimmers of all levels, whether you're training or just relaxing.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/swimming pool service.png') }}" alt="Swimming Pool Image" class="service-image">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+</body>
+
+</html>

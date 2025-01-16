@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion's Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('registration') }}">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Gallery Section for Events -->
+        <section class="gallery">
+            <h1>Our Events</h1>
+            <h2>Take a look at some of our memorable events at Champion's Arena.</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery 1.jpg') }}" alt="Event 1">
+                    <div class="overlay">
+                        <p>Basketball Victory: "Our basketball team claimed victory, showcasing unbeatable teamwork and skill!"</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery 2.jpg') }}" alt="Event 2">
+                    <div class="overlay">
+                        <p>Badminton Championship: "Our badminton players triumphed with agility and strategy, securing a well-earned win!"</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery 3.png') }}" alt="Event 3">
+                    <div class="overlay">
+                        <p>Energetic Fitness Session: "Our members bring energy and dedication to every workout, pushing their limits in the fitness center!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Gallery Section for Coaches Helping Clients -->
+        <section class="gallery">
+            <h1>Our Coaches in Action</h1>
+            <h2>Our dedicated coaches helping clients achieve their fitness goals.</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/coach1.jpg') }}" alt="Coach 1">
+                    <div class="overlay">
+                        <p>"Our expert trainer provides personalized diet plans to help clients achieve their fitness goals."
+
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/coach2.jpg') }}" alt="Coach 2">
+                    <div class="overlay">
+                        <p>"Focused coaching during badminton practice, helping players improve their skills and technique."</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/coach3.jpeg') }}" alt="Coach 3">
+                    <div class="overlay">
+                        <p>"Guiding clients through intense cardio workouts, ensuring proper form and maximum results."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+
+</html>

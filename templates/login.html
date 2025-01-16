@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion's Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('registration') }}">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <!-- Left Section: Logo and Text -->
+        <div class="logo-section">
+            <div class="logo-content">
+                <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Champion's Arena Logo" class="logo">
+                <div class="welcome-text">
+                    <h1>Welcome to Champion's Arena</h1>
+                    <p>Fuel Your Passion, Ignite Your Potential</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Login Form -->
+        <div class="login-form">
+            <h2>Login to Your Account</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="{{ url_for('registration') }}" class="create-account">Create new account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

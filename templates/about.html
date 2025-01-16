@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion's Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('registration') }}">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about">
+        <div class="content">
+            <h1><b><u><i>"Who We Are"</i></u></b></h1>
+            <h2><b><i>At Champion's Arena, we believe in pushing the limits of what’s possible. From professional coaching to state-of-the-art facilities, our mission is to help you achieve your fitness goals, whether you're an athlete, a fitness enthusiast, or someone just starting your journey. Join our community of passionate individuals, and let us help you break through barriers and reach your highest potential.</i></b></h2>
+        </div>
+    </main>
+    <section class="details">
+        <div class="details-box">
+            <h2>Our Timings</h2>
+            <p>Monday - Friday: 6:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+            
+            <h2>Location</h2>
+            <p>Champion's Arena, 5219 Sports Avenue, Karachi, Pakistan</p>
+            
+            <h2>Contact Us</h2>
+            <p>Phone: 021-36617592</p>
+            <p>Email: contact@championsarena.com</p>
+        </div>
+    </section>
+    <section class="praise">
+        <h2>What Our Members Say:</h2>
+        <div class="testimonials">
+            <!-- Gym Testimonial -->
+            <div class="testimonial">
+                <p>"Champion's Arena is the best fitness centre I've ever been to. The trainers are incredibly knowledgeable and the community is supportive. I’ve never felt more motivated!"</p>
+                <p class="author">~ Ashhad M.</p>
+            </div>
+
+            <!-- Badminton Court Testimonial -->
+            <div class="testimonial">
+                <p>"The badminton courts here are top-notch! The space is spacious and well-maintained, making it perfect for both casual players and serious competitors."</p>
+                <p class="author">~ M. Saqib</p>
+            </div>
+
+            <!-- Basketball Court Testimonial -->
+            <div class="testimonial">
+                <p>"I love the basketball court at Champion's Arena. It’s always in great condition, and it's the perfect place to practice or have a friendly game with friends."</p>
+                <p class="author">~ R. Hussain.</p>
+            </div>
+
+            <!-- Swimming Pool Testimonial -->
+            <div class="testimonial">
+                <p>"The swimming pool is absolutely amazing! It’s clean, spacious, and the perfect spot for relaxation or swimming laps. I enjoy coming here every week."</p>
+                <p class="author">~ M. Zeeshan.</p>
+            </div>
+    </section>
+</body>
+
+</html>

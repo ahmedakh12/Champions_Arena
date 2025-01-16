@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Champion's Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('registration') }}">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <br><br>
+            <img src="{{ url_for('static', filename='images/logo st.png') }}" alt="logo" width="150px" height="150px">
+            <br><br>
+            <h1><b><u><i>"Welcome to Champion's Arena"</i></u></b></h1>
+            <h2><b><i>Fuel Your Passion, Ignite Your Potential</i></b></h2>
+            <h3><b><big>Unleash your potential.</big></b><br>Whether you're training for a championship or simply looking to get fit, Champion's Arena is where champions are made.</h3>
+            <img src="{{ url_for('static', filename='images/home back t.png') }}" alt="Home Background">
+        </div>
+    </main>
+</body>
+
+</html>
